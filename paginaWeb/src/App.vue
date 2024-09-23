@@ -8,6 +8,7 @@ import Home from './views/HomeView.vue'
 </template>
 
 <style>
+
 @font-face {
     font-family: Abril_Fatface;
     src: url('../public/Abril_Fatface/AbrilFatface-Regular.ttf');
@@ -31,8 +32,14 @@ import Home from './views/HomeView.vue'
     src: url('../public/Nunito/static/Nunito-Bold.ttf');
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
 body {
     background-color: #223D3C;
+    margin: 0;
+}
+html {
     margin: 0;
 }
 body, html {

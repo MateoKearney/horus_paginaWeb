@@ -10,7 +10,7 @@
     <div class="reng1">
       <div class="adress">
         <h2>Mailing Address</h2>
-        <p>123 Anywhere St., Any City State, Country 12345</p>
+        <p>Av. Otamendi y Juan B. Justo (79), Quilmes Este</p>
       </div>
       <div class="mail">
         <h2>Email</h2>
@@ -55,7 +55,7 @@
   font-size: 1.1rem;
   color: #1b3039;
   padding: 9px 20px;
-  margin: 2% 3% 0;
+  margin: 2% 2% 0;
   background: #eceff1;
   border: none;
   border-radius: 50px;
@@ -71,8 +71,7 @@
 
 h1 {
   text-align: left;
-  margin: 0 0 0 8rem;
-  font-size: 6.5rem;
+  margin: 0 0 0 6rem;
   font-family: Abril_Fatface;
   color: #1DCD8D;
 }
@@ -88,10 +87,9 @@ p{
 }
 
 .info {
-  flex-wrap: no-wrap;
   justify-content: space-between;
-  width: 100vw;
-  margin: 2rem 10rem;
+  width: 80%;
+  margin-left: 9rem;
 }
 
 .reng1 {
@@ -158,6 +156,14 @@ p { font-size: 1rem; }
 
 }
 
+@media only screen and (max-width: 1024px) {
+
+h1 { font-size: 5rem; }
+
+.reng1 { gap: 10%; }
+
+}
+
 @media only screen and (max-width: 768px) {
 
 h1 { font-size: 3rem; margin-top: 4rem; }
@@ -166,13 +172,17 @@ h2 { font-size: 1.7rem; }
 
 p { font-size: 0.8rem; }
 
+.reng1 { gap: 13%; }
+
+.reng2 { gap: 13%; }
+
 }
 
 @media only screen and (max-width: 500px) {
 
 .btn button { margin-top: 1rem; }
 
-h1 { font-size: 4rem; text-align: center;  margin-top: 1rem; }
+h1 { font-size: 3rem; text-align: center;  margin-top: 1rem; }
 
 h2 { font-size: 2rem; }
 
@@ -200,5 +210,10 @@ p { font-size: 1rem; }
 
 }
 
+body, html {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
 
 </style>
